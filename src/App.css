@@ -1,18 +1,18 @@
 .App {
-  color: antiquewhite;
+  color: rgb(255, 223, 182);
   text-align: center;
+  background:rgb(29, 17, 1);
 }
 
-.App-header {
-  background-image: url("./typewriter.jpg");
-  max-width: 2000px;
+.App .container {
+  background-image: url("https://images.unsplash.com/photo-1521225753516-46438a76f25a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODN8fGFudGlxdWV8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60");
 }
 
 .App-header h1 {
-   padding: 25px;
+  padding: 25px;
 }
 
 .App-footer {
   margin: 30px 0px;
-  font-size: 15px;
+  font-size: 14px;
 }

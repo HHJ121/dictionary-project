@@ -3,18 +3,18 @@ import React, { useState } from "react";
 import "./DictionaryWordSearch.css";
 
 export default function DictionaryWordSearch() {
-let [keyword, setKeyword] = useState("");
+  let [keyword, setKeyword] = useState("");
 
   function wordSearch(event) {
-      event.preventDefault();
-      alert(`Searching for ${keyword}...`)
+    event.preventDefault();
+    alert(`Searching for ${keyword}...`);
   }
-  
+
   function keywordChange(event) {
-      setKeyword(event.target.value);
+    setKeyword(event.target.value);
   }
-  
-    return (
+
+  return (
     <div className="DictionaryWordSearch">
       <form onSubmit={wordSearch}>
         <input
@@ -24,8 +24,9 @@ let [keyword, setKeyword] = useState("");
           autoFocus={true}
           onChange={keywordChange}
         />
-        <input type="submit" value="Search"  />
+        <input type="submit" value="Search" />
       </form>
+     
     </div>
   );
 }

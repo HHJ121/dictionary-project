@@ -8,11 +8,11 @@ export default function App() {
       <div className="container">
         <header className="App-header">
           <h1>Dictionary</h1>
-          <main>
-            <DictionaryWordSearch />
-          </main>
-          <footer className="App-footer">Coded by Haw-Harn Jiang</footer>
         </header>
+        <main>
+          <DictionaryWordSearch />
+        </main>
+        <footer className="App-footer">Coded by Haw-Harn Jiang</footer>
       </div>
     </div>
   );
