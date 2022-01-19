@@ -1,0 +1,18 @@
+.App {
+  color: antiquewhite;
+  text-align: center;
+}
+
+.App-header {
+  background-image: url("./typewriter.jpg");
+  max-width: 2000px;
+}
+
+.App-header h1 {
+   padding: 25px;
+}
+
+.App-footer {
+  margin: 30px 0px;
+  font-size: 15px;
+}

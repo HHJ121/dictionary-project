@@ -1,16 +1,19 @@
-import typewriter from "./typewriter.jpg";
 import "./App.css";
+
+import DictionaryWordSearch from "./DictionaryWordSearch";
 
 export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img
-          src={typewriter}
-          className="background-image img-fluid"
-          alt="type writer"
-        />
-      </header>
+      <div className="container">
+        <header className="App-header">
+          <h1>Dictionary</h1>
+          <main>
+            <DictionaryWordSearch />
+          </main>
+          <footer className="App-footer">Coded by Haw-Harn Jiang</footer>
+        </header>
+      </div>
     </div>
   );
 }
