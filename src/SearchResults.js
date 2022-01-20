@@ -8,8 +8,8 @@ export default function SearchResults(props) {
    if (props.results) {
        return (
         <div className="SearchResults">
-        <h2>
-            {props.results.word}
+        <h2 className="text-capitalize">
+            "{props.results.word}"
         </h2>
         {props.results.meanings.map(function(meaning, index) {
             return (
