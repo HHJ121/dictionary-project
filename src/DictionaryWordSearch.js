@@ -15,10 +15,9 @@ export default function DictionaryWordSearch() {
 
   function wordSearch(event) {
     event.preventDefault();
-    alert(`Searching for the definition of ${keyword}...`);
 
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
-    console.log(apiUrl);
+
     axios.get(apiUrl).then(showDefinition);
   }
 
@@ -28,15 +27,15 @@ export default function DictionaryWordSearch() {
 
   return (
     <div className="DictionaryWordSearch">
-      <form onSubmit={wordSearch}>
+      <form className="mb-4" onSubmit={wordSearch}>
         <input
           type="search"
           placeholder="Enter a word"
           autoComplete="off"
           autoFocus={true}
           onChange={keywordChange}
+          className="form-control"
         />
-        <input type="submit" value="Search" />
       </form>
       <SearchResults results={results} />
     </div>

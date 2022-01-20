@@ -12,7 +12,27 @@ export default function App() {
         <main>
           <DictionaryWordSearch />
         </main>
-        <footer className="App-footer">Coded by Haw-Harn Jiang</footer>
+        <footer className="App-footer mt-5">
+          <a
+            href="https://github.com/HHJ121/dictionary-project"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Open-source code
+          </a>{" "}
+          by{" "}
+          <a href="https://guidedbythe1.com/" target="_blank" rel="noreferrer">
+            Haw-Harn Jiang
+          </a>
+          , hosted by{" "}
+          <a
+            href="https://heuristic-bohr-ddaf59.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Netlify
+          </a>
+        </footer>
       </div>
     </div>
   );
