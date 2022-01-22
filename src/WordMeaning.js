@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./WordMeaning.css";
+import Synonyms from "./Synonyms";
 
 export default function WordMeaning(props) {
   return (
@@ -12,7 +13,9 @@ export default function WordMeaning(props) {
             <p>
               {definition.definition}
               <br />
-              <em>{definition.example}</em>
+              <em>
+                <strong>Example</strong>:{" "}{definition.example}</em>
+              <Synonyms synonyms={definition.synonyms} />
               <br />
               <br />
             </p>
