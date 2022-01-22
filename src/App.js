@@ -1,6 +1,7 @@
 import "./App.css";
 
 import DictionaryWordSearch from "./DictionaryWordSearch";
+import TypewriterEffect from "./TypewriterEffect";
 
 export default function App() {
   return (
@@ -8,6 +9,8 @@ export default function App() {
       <div className="container">
         <header className="App-header">
           <h1>Dictionary</h1>
+          <TypewriterEffect />
+          <br />
         </header>
         <main>
           <DictionaryWordSearch />
