@@ -6,10 +6,12 @@ import SearchResults from "./SearchResults";
 import "./DictionaryWordSearch.css";
 
 export default function DictionaryWordSearch() {
+ 
   let [keyword, setKeyword] = useState("");
   let [results, setResults] = useState("");
 
   function showDefinition(response) {
+    console.log(response.data);
     setResults(response.data[0]);
   }
 
