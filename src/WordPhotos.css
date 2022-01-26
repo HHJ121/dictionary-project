@@ -1,4 +1,9 @@
 .WordPhotos img {
-    border-radius: 5px;
-    margin: 10px 0px 20px;
+  border-radius: 5px;
+  margin: 10px 0px 20px;
+  filter: sepia(68%);
+}
+
+.WordPhotos img:hover {
+    filter: sepia(0%);
 }
