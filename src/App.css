@@ -1,5 +1,5 @@
 .App {
-  color: rgb(255, 223, 182);
+  color: rgb(252, 231, 205);
   text-align: center;
   background:rgb(29, 17, 1);
   font-family: 'Special Elite', cursive;
@@ -15,7 +15,7 @@
 }
 
 .App-footer {
-  margin: 30px 0px;
+  margin: 20px 0px 0px;
   font-size: 14px;
 }
 

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-
 import SearchResults from "./SearchResults";
 import TypewriterEffect from "./TypewriterEffect";
 import "./DictionaryWordSearch.css";
@@ -40,7 +39,12 @@ export default function DictionaryWordSearch(props) {
     return (
       <div className="DictionaryWordSearch">
         <section>
-          <TypewriterEffect strings="What word would you like to search?" autoStart={true} loop={true} pauseFor={10000} />
+          <TypewriterEffect
+            strings="What word would you like to search for?"
+            autoStart={true}
+            loop={true}
+            pauseFor={10000}
+          />
           <form className="mb-4" onSubmit={handleSubmit}>
             <input
               type="search"
@@ -48,10 +52,11 @@ export default function DictionaryWordSearch(props) {
               autoComplete="off"
               autoFocus={true}
               onChange={keywordChange}
+              defaultValue={props.defaultKeyword}
             />
           </form>
           <div className="hint-words">
-            Suggested words: faith, seeking, olive, wisdom, revelation . . .
+            i.e. faith, seeking, olive, wisdom, revelation . . .
           </div>
         </section>
         <SearchResults results={results} />
