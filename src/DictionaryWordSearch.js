@@ -56,7 +56,7 @@ export default function DictionaryWordSearch(props) {
             strings="What word would you like to search for?"
             autoStart={true}
             loop={true}
-            pauseFor={10000}
+            pauseFor={20000}
           />
           <form className="mb-4" onSubmit={handleSubmit}>
             <input

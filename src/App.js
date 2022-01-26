@@ -18,7 +18,7 @@ export default function App() {
           <br />
         </header>
         <main>
-          <DictionaryWordSearch defaultKeyword="grace" />
+          <DictionaryWordSearch defaultKeyword="vintage" />
         </main>
         <footer className="App-footer mt-5">
           <a
