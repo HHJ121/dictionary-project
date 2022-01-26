@@ -11,10 +11,13 @@ export default function WordMeaning(props) {
         return (
           <div key={index}>
             <p>
-              {definition.definition}
+              <i class="bi bi-book"></i> {" "}
+              <span className="definition">{definition.definition}</span>
+
               <br />
-              <em>
-                <strong>Example</strong>:{" "}{definition.example}</em>
+              <span className="example">{definition.example}</span>
+              <br />
+              <br />
               <Synonyms synonyms={definition.synonyms} />
               <br />
               <br />

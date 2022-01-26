@@ -1,14 +1,15 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 
-export default function TypewriterEffect() {
+export default function TypewriterEffect(props) {
     return (
       <div className="TypewriterEffect">
         <Typewriter
           options={{
-            strings: ["Unlock the word", "Seek its meaning", "Acquire the knowledge"],
-            autoStart: true,
-            loop: true,
+            strings: [props.strings],
+            autoStart: props.autoStart,
+            loop: props.loop,
+            pauseFor: props.pauseFor,
           }}
         />
       </div>

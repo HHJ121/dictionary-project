@@ -9,8 +9,6 @@ export default function AudioPhonetic(props) {
         src={props.phonetic.audio}
         autoPlay={false}
         controls={true}
-       
-        
       />
 
       <br />

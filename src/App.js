@@ -1,5 +1,6 @@
 import "./App.css";
 
+
 import DictionaryWordSearch from "./DictionaryWordSearch";
 import TypewriterEffect from "./TypewriterEffect";
 
@@ -9,11 +10,15 @@ export default function App() {
       <div className="container">
         <header className="App-header">
           <h1>Dictionary</h1>
-          <TypewriterEffect />
+          <TypewriterEffect
+            strings="Unlock the word .  Seek the meaning .  Acquire the knowledge"
+            autoStart={true}
+            loop={true}
+          />
           <br />
         </header>
         <main>
-          <DictionaryWordSearch />
+          <DictionaryWordSearch defaultKeyword="grace" />
         </main>
         <footer className="App-footer mt-5">
           <a

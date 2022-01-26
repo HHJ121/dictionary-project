@@ -1,0 +1,12 @@
+.SearchResults h2 {
+    font-size: 37px;
+    font-weight: bold;
+    color: #fdc070;
+
+}
+
+.SearchResults .phonetic-text {
+    font-size: 22px;
+    margin-bottom: 10px;
+
+}
