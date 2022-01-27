@@ -9,7 +9,7 @@ export default function App() {
     <div className="App">
       <div className="container">
         <header className="App-header">
-          <h1>Dictionary</h1>
+          <h1>~ Dictionary ~</h1>
           <TypewriterEffect
             strings="Unlock the word .  Seek the meaning .  Acquire the knowledge"
             autoStart={true}

@@ -1,5 +1,6 @@
 import React from "react";
 
+import "./AudioPhonetic.css";
 import ReactAudioPlayer from "react-audio-player";
 
 export default function AudioPhonetic(props) {
@@ -11,7 +12,6 @@ export default function AudioPhonetic(props) {
         controls={true}
       />
 
-      <br />
       <br />
     </div>
   );
